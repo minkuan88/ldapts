@@ -3,6 +3,7 @@ import * as tls from 'tls';
 import { parse as parseUrl } from 'url';
 
 import debug from 'debug';
+import 'react-native-get-random-values';
 import { v4 } from 'uuid';
 
 import { Attribute } from './Attribute';

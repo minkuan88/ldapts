@@ -1,7 +1,7 @@
 {
-  "name": "ldapts",
-  "version": "2.12.0",
-  "description": "LDAP client",
+  "name": "react-native-ldapts",
+  "version": "1.0.0",
+  "description": "LDAP client for React Native",
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
@@ -14,6 +14,11 @@
     "postinstall": "husky install",
     "postpublish": "pinst --enable"
   },
+  "react-native": {
+    "net": "react-native-tcp",
+    "stream": "stream-browserify",
+    "tls": false
+  },
   "lint-staged": {
     "*.js": [
       "eslint --fix"
@@ -24,7 +29,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ldapts/ldapts.git"
+    "url": "git+https://github.com/minkuan88/react-native-ldapts.git"
   },
   "engines": {
     "node": ">=10"
@@ -47,6 +52,7 @@
     "asn1": "~0.2.4",
     "debug": "~4.3.1",
     "strict-event-emitter-types": "~2.0.0",
+    "tls": "~0.0.1",
     "uuid": "~8.3.2"
   },
   "devDependencies": {
@@ -78,5 +84,13 @@
     "ts-mockito": "~2.6.1",
     "ts-node": "~9.1.1",
     "typescript": "~4.2.3"
+  },
+  "peerDependencies": {
+    "node-libs-react-native": "^1.2.1",
+    "react": "~17.0.1",
+    "react-native": "~0.64.0",
+    "react-native-get-random-values": "~1.6.0",
+    "react-native-tcp": "~4.0.0",
+    "stream-browserify": "~3.0.0"
   }
 }
