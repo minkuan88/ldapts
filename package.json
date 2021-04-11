@@ -1,6 +1,6 @@
 {
   "name": "react-native-ldapts",
-  "version": "1.0.0",
+  "version": "0.0.4",
   "description": "LDAP client for React Native",
   "main": "index.js",
   "types": "index.d.ts",
@@ -37,14 +37,14 @@
   "keywords": [
     "ldap",
     "active",
-    "directory"
+    "directory",
+    "react-native"
   ],
-  "author": "jim@biacreations.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ldapts/ldapts/issues"
+    "url": "https://github.com/ldapts/react-native-ldapts/issues"
   },
-  "homepage": "https://github.com/ldapts/ldapts#readme",
+  "homepage": "https://github.com/ldapts/react-native-ldapts#readme",
   "dependencies": {
     "@types/asn1": "~0.2.0",
     "@types/node": "~14.14.37",
@@ -86,11 +86,11 @@
     "typescript": "~4.2.3"
   },
   "peerDependencies": {
-    "node-libs-react-native": "^1.2.1",
-    "react": "~17.0.1",
-    "react-native": "~0.64.0",
-    "react-native-get-random-values": "~1.6.0",
-    "react-native-tcp": "~4.0.0",
-    "stream-browserify": "~3.0.0"
+    "node-libs-react-native": ">=1.2.1",
+    "react": ">=16.0.0",
+    "react-native": ">=0.63",
+    "react-native-get-random-values": ">=1.6.0",
+    "react-native-tcp": ">=4.0.0",
+    "stream-browserify": ">=3.0.0"
   }
 }
